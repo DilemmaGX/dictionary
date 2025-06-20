@@ -1,16 +1,43 @@
-# dictionary
+# Dictionary Flutter App
 
-A new Flutter project.
+A modern Flutter-based dictionary application with theme customization and favorites management, deployed to GitHub Pages.
 
-## Getting Started
+## Features
+- **Word Search**: Look up English word definitions using [Free Dictionary API](https://dictionaryapi.dev)
+- **Favorites System**: Save favorite definitions with part-of-speech tracking
+- **Theme Customization**:
+  - Dark/Light mode toggle
+  - 16 accent color options
+- **Responsive Design**: Works on mobile and web
+- **Offline Storage**: Persists favorites using SharedPreferences
 
-This project is a starting point for a Flutter application.
+## Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/dictionary.git
+```
+2. Install dependencies:
+```bash
+flutter pub get
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
+```bash
+# Run in development mode
+flutter run -d chrome
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Build for production
+flutter build web
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## API Reference
+This app uses the [Free Dictionary API](https://dictionaryapi.dev). Please note:
+- Rate limiting: 50 requests/hour
+- Only English words supported
+- API availability not guaranteed
+
+## Deployment
+Automatically deployed to GitHub Pages via GitHub Actions. Ensure:
+1. GitHub Pages enabled in repo settings
+2. `gh-pages` branch selected
+3. GitHub Token with repo permissions
